@@ -1,0 +1,73 @@
+body {
+  margin: 30px;
+  font-size: larger;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: black;
+  color: white;
+}
+
+main {
+  display: grid;
+  column-gap: 50px;
+  grid-template-columns: [first] 1fr [second] 2fr;
+}
+
+.list {
+  list-style: none;
+  padding-inline-start: 0%;
+  grid-area: first;
+}
+
+.listItem {
+  padding: 20px;
+  padding-inline-start: 10px;
+  border-style: none none solid none;
+  border-width: 0.5px;
+  border-color: gray;
+}
+
+.listItem:hover {
+  background-color: gray;
+  cursor: pointer;
+}
+.details {
+  grid-area: second;
+  margin-block-start: 0%;
+  padding-block-end: 0%;
+}
+
+.episodeTitle {
+  padding-inline-start: 0%;
+  margin-block-start: 0%;
+  padding-top: 20px;
+}
+
+.message {
+  padding-block-start: 20px;
+}
+
+.title1 {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.appTitle {
+  text-decoration: underline;
+  padding-bottom: 0%;
+}
+
+.appTitle:hover {
+  cursor: pointer;
+}
+
+button {
+  background-color: white;
+  padding: 10px;
+  border-style: none;
+}
+
+button:hover {
+  background-color: darkred;
+  color: white;
+  cursor: pointer;
+}
