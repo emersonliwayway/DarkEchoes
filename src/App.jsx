@@ -18,7 +18,10 @@ export default function App() {
           selectedEpisode={selectedEpisode}
           setSelectedEpisode={setSelectedEpisode}
         />
-        <AllEpisodes selectedEpisode={selectedEpisode} />
+        <AllEpisodes
+          selectedEpisode={selectedEpisode}
+          setSelectedEpisode={setSelectedEpisode}
+        />
       </main>
     </>
   );
